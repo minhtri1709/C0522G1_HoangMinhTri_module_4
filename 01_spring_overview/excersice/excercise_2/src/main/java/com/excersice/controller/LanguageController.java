@@ -23,8 +23,8 @@ public class LanguageController {
 
     @RequestMapping(value = "translate", method = RequestMethod.GET)
     public ModelAndView showList(@RequestParam String english) {
-        
-            return new ModelAndView("display", "vietnamese", iLanguageService.findByName(english));
+
+        return new ModelAndView("display", "vietnamese", iLanguageService.findByName_1(english));
 
 
     }

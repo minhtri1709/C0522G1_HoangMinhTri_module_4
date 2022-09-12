@@ -15,7 +15,7 @@ public class CalculationController {
     @Autowired
     private ICalculationService iCalculationService;
 
-    @GetMapping("/display")
+    @RequestMapping(value = {"","/  display"})
     public ModelAndView exchange() {
        return new ModelAndView("/display");
     }

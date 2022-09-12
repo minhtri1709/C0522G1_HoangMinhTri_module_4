@@ -25,15 +25,9 @@
                 <button>TRANSLATE</button>
             </td>
         </tr>
-        <c:if test="${vietnamese.size()!=0}">
-            <tr>
-                 <c:forEach var="word" items="${vietnamese}">
-                     <p>
-                         ${word.vietnamese}
-                     </p>
-                 </c:forEach>
-            </tr>
-        </c:if>
+        <tr>
+            <h3>${vietnamese}</h3>
+        </tr>
 
     </table>
 </form>

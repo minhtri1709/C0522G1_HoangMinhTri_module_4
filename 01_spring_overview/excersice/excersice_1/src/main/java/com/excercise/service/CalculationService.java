@@ -7,7 +7,7 @@ public class CalculationService implements ICalculationService{
 
     @Override
     public double exchange(double money) {
-        double result =  money/23000;
+        double result =  money*23000;
         return result;
     }
 }

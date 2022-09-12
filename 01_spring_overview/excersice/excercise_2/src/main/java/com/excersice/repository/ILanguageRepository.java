@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface ILanguageRepository {
     public List<Language> findByName(String keyword);
+
+    public String findByName_1(String keyword);
 }

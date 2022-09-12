@@ -19,7 +19,7 @@
         </tr>
         <tr>
             <td>
-                <input type="number" name="money" placeholder="VNĐ">
+                <input type="number" name="money" placeholder="USD">
             </td>
             <td>
                 <button type="submit" name="calculate">
@@ -28,7 +28,7 @@
             </td>
         <tr>
             <td>
-                USD: ${result}
+                VND: ${result}
             </td>
         </tr>
     </table>
