@@ -14,13 +14,9 @@ public class LanguageService implements ILanguageService {
     @Autowired
     private ILanguageRepository iLanguageRepository;
 
-    @Override
-    public List<Language> findByName(String keyword) {
-        return iLanguageRepository.findByName(keyword);
-    }
 
     @Override
-    public String findByName_1(String keyword) {
-        return iLanguageRepository.findByName_1(keyword);
+    public String findByName(String keyword) {
+        return iLanguageRepository.findByName(keyword);
     }
 }

@@ -12,8 +12,8 @@ import java.util.Locale;
 public class LanguageRepository implements ILanguageRepository {
     private static List<Language> languageList;
 
-     static {
-         languageList = new ArrayList<>();
+    static {
+        languageList = new ArrayList<>();
         languageList.add(new Language("Oto", "Car"));
         languageList.add(new Language("Xe đạp", "Bike"));
         languageList.add(new Language("Ngôi nhà", "House"));
@@ -21,22 +21,11 @@ public class LanguageRepository implements ILanguageRepository {
         languageList.add(new Language("Máy tính", "Computer"));
     }
 
-    @Override
-    public List<Language> findByName(String keyword) {
-         List<Language> result = new ArrayList<>();
-
-        for (Language word:languageList) {
-            if(word.getEnglish().contains(keyword)){
-                result.add(word);
-            }
-        }
-        return result;
-    }
 
     @Override
-    public String findByName_1(String keyword) {
-        for (Language language : languageList){
-            if(keyword.toLowerCase().equals(language.getEnglish().toLowerCase(Locale.ROOT))){
+    public String findByName(String keyword) {
+        for (Language language : languageList) {
+            if (keyword.toLowerCase().equals(language.getEnglish().toLowerCase(Locale.ROOT))) {
                 return language.getVietnamese();
             }
         }
