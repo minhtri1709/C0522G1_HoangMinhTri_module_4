@@ -9,19 +9,11 @@ public interface IPersonRepository {
 
     List<String> genderList();
 
-    List<String> dayOfBeginList();
+    List<String> getDayList();
 
-    List<String> monthOfBeginList();
+    List<String> getMonthList();
 
-    List<String> yearOfBeginList();
-
-    List<String> dayOfEndList();
-
-    List<String> monthOfEndList();
-
-    List<String> yearOfEndList();
-
-    List<String> yearOfBirthList();
+    List<String> getYearList();
 
     List<String> nationalityList();
 

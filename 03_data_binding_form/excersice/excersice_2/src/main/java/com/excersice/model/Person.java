@@ -1,5 +1,7 @@
 package com.excersice.model;
 
+import java.util.Objects;
+
 public class Person {
 
     private int idNumber;
@@ -183,4 +185,13 @@ public class Person {
     public void setCity(String city) {
         this.city = city;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return idNumber == person.idNumber && seatOfVehicle == person.seatOfVehicle && Objects.equals(name, person.name) && Objects.equals(yearOfBirth, person.yearOfBirth) && Objects.equals(gender, person.gender) && Objects.equals(nationality, person.nationality) && Objects.equals(id, person.id) && Objects.equals(vehicle, person.vehicle) && Objects.equals(vehicleNumber, person.vehicleNumber) && Objects.equals(dayOfBegin, person.dayOfBegin) && Objects.equals(monthOfBegin, person.monthOfBegin) && Objects.equals(yearOfBegin, person.yearOfBegin) && Objects.equals(dayOfEnd, person.dayOfEnd) && Objects.equals(monthOfEnd, person.monthOfEnd) && Objects.equals(yearOfEnd, person.yearOfEnd) && Objects.equals(city, person.city);
+    }
+
 }

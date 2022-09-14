@@ -2,10 +2,12 @@ package com.excersice.repository.impl;
 
 import com.excersice.model.Person;
 import com.excersice.repository.IPersonRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class PersonRepository implements IPersonRepository {
 
     private static List<Person> personList = new ArrayList<>();
@@ -32,7 +34,7 @@ public class PersonRepository implements IPersonRepository {
     }
 
     @Override
-    public List<String> dayOfBeginList() {
+    public List<String> getDayList() {
         List<String> dayOfBeginList = new ArrayList<>();
         dayOfBeginList.add("1");
         dayOfBeginList.add("2");
@@ -69,7 +71,7 @@ public class PersonRepository implements IPersonRepository {
     }
 
     @Override
-    public List<String> monthOfBeginList() {
+    public List<String> getMonthList() {
         List<String> monthOfBeginList = new ArrayList<>();
         monthOfBeginList.add("1");
         monthOfBeginList.add("2");
@@ -86,80 +88,9 @@ public class PersonRepository implements IPersonRepository {
         return monthOfBeginList;
     }
 
-    @Override
-    public List<String> yearOfBeginList() {
-        List<String> yearOfBeginList = new ArrayList<>();
-        yearOfBeginList.add("2020");
-        yearOfBeginList.add("2021");
-
-        return null;
-    }
 
     @Override
-    public List<String> dayOfEndList() {
-        List<String> dayOfEndList = new ArrayList<>();
-        dayOfEndList.add("1");
-        dayOfEndList.add("2");
-        dayOfEndList.add("3");
-        dayOfEndList.add("4");
-        dayOfEndList.add("5");
-        dayOfEndList.add("6");
-        dayOfEndList.add("7");
-        dayOfEndList.add("8");
-        dayOfEndList.add("9");
-        dayOfEndList.add("10");
-        dayOfEndList.add("11");
-        dayOfEndList.add("12");
-        dayOfEndList.add("13");
-        dayOfEndList.add("14");
-        dayOfEndList.add("15");
-        dayOfEndList.add("16");
-        dayOfEndList.add("17");
-        dayOfEndList.add("18");
-        dayOfEndList.add("19");
-        dayOfEndList.add("20");
-        dayOfEndList.add("21");
-        dayOfEndList.add("22");
-        dayOfEndList.add("23");
-        dayOfEndList.add("24");
-        dayOfEndList.add("25");
-        dayOfEndList.add("26");
-        dayOfEndList.add("27");
-        dayOfEndList.add("28");
-        dayOfEndList.add("29");
-        dayOfEndList.add("30");
-        dayOfEndList.add("31");
-        return dayOfEndList;
-    }
-
-    @Override
-    public List<String> monthOfEndList() {
-        List<String> monthOfEndList = new ArrayList<>();
-        monthOfEndList.add("1");
-        monthOfEndList.add("2");
-        monthOfEndList.add("3");
-        monthOfEndList.add("4");
-        monthOfEndList.add("5");
-        monthOfEndList.add("6");
-        monthOfEndList.add("7");
-        monthOfEndList.add("8");
-        monthOfEndList.add("9");
-        monthOfEndList.add("10");
-        monthOfEndList.add("11");
-        monthOfEndList.add("12");
-        return monthOfEndList;
-    }
-
-    @Override
-    public List<String> yearOfEndList() {
-        List<String> yearOfEndList = new ArrayList<>();
-        yearOfEndList.add("2020");
-        yearOfEndList.add("2021");
-        return yearOfEndList;
-    }
-
-    @Override
-    public List<String> yearOfBirthList() {
+    public List<String> getYearList() {
         List<String> yearOfBirthList = new ArrayList<>();
         yearOfBirthList.add("1990");
         yearOfBirthList.add("1991");
@@ -181,7 +112,7 @@ public class PersonRepository implements IPersonRepository {
         nationalityList.add("Trung Quốc");
         nationalityList.add("Lào");
         nationalityList.add("Quốc gia khác");
-        return null;
+        return nationalityList;
     }
 
     @Override

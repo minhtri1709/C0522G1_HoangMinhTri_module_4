@@ -21,7 +21,7 @@ public interface IPersonService {
 
     List<String> yearOfEndList();
 
-    List<String> yearOfBirthList();
+    List<String> getYearOfBirth();
 
     List<String> nationalityList();
 
