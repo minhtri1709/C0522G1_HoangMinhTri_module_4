@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p>
+    <a href="/song/list">
+        Trở về trang chủ
+    </a>
+</p>
+<div id="detail">
+    <div>
+        <label>Tên bài hát:</label>
+        <label th:text="${song.name}"></label>
+    </div>
+    <div>
+        <label>Tên ca sĩ:</label>
+        <label th:text="${song.singer}"></label>
+    </div>
+    <div>
+        <label>Thể loại âm nhạc:</label>
+        <label th:text="${song.typeOfMusic}"></label>
+    </div>
+    <div>
+        <label>Đường dẫn bài hát:</label>
+        <label th:text="${song.link}"></label>
+    </div>
+</div>
+</body>
+</html>

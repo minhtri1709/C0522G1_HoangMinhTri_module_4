@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    <a href="/product/list">
+        Back to customer list
+    </a>
+</p>
+<div id="form">
+    <form th:action="@{/song/save}" th:object="${song}" method="POST">
+        <input type="hidden" th:field="*{id}"/>
+        <div>
+            <label>Tên bài hát</label>
+            <input type="text" th:field="*{name}"/>
+        </div>
+        <div>
+            <label>Tên ca sĩ</label>
+            <input type="text" th:field="*{singer}"/>
+        </div>
+        <div>
+            <label>Thể loại âm nhạc</label>
+            <input type="text" th:field="*{typeOfMusic}"/>
+        </div>
+        <div>
+            <label>Đường dẫn bài hát</label>
+            <input type="text" th:field="*{link}"/>
+        </div>
+        <input type="submit" value="Save"/>
+    </form>
+</div>
+</body>
+</html>

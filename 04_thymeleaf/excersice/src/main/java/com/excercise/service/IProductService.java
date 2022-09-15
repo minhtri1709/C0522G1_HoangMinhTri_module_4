@@ -9,13 +9,13 @@ public interface IProductService {
 
     List<Product> findAll();
 
-    void delete(int id);
-
     void save(Product product);
 
-    void update(int id, Product product);
+    void update(Product product);
 
     Product findById(int id);
+
+    void delete(int id);
 
     List<Product> findByName(String name);
 }

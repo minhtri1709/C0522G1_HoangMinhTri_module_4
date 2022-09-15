@@ -5,117 +5,207 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="320a0c7c-8783-4dff-b5e8-7f0a326729f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/excercise/controller/ProductController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/excercise/model/Product.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/excercise/repository/IProductRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/excercise/repository/impl/ProductRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/excercise/service/IProductService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/excercise/service/impl/ProductService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/libs/excersice-1.0-SNAPSHOT.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/excercise/config/FilterUTF8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/excercise/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/excercise/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/excercise/repository/IProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/excercise/repository/impl/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/excercise/service/IProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/excercise/service/impl/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/.gradle/7.1/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/.gradle/7.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/.gradle/7.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/src/main/java/com/example/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/src/main/java/com/example/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/src/main/java/com/example/service/ICustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/src/main/java/com/example/service/impl/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/src/main/webapp/WEB-INF/views/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../demo/Thymeleaf/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../demo/Thymeleaf/create.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../demo/Thymeleaf/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../demo/Thymeleaf/layout.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../demo/Thymeleaf/list.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/excercise/config/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/excercise/config/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/excercise/repository/ConnectionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.conf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/.gradle/7.1/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/.gradle/7.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/.gradle/7.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/build/classes/java/main/com/excercise/config/FilterUTF8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/build/classes/java/main/com/excercise/controller/SongController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/build/classes/java/main/com/excercise/model/Song.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/build/classes/java/main/com/excercise/repository/ConnectionUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/build/classes/java/main/com/excercise/repository/ISongRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/build/classes/java/main/com/excercise/repository/impl/SongRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/build/classes/java/main/com/excercise/service/ISongService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/build/classes/java/main/com/excercise/service/impl/SongService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/build/libs/excercise-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/build/resources/main/hibernate.conf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/src/main/java/com/excercise/config/FilterUTF8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/src/main/java/com/excercise/controller/SongController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/src/main/java/com/excercise/model/Song.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/src/main/java/com/excercise/repository/ConnectionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/src/main/java/com/excercise/repository/ISongRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/src/main/java/com/excercise/repository/impl/SongRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/src/main/java/com/excercise/service/ISongService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/src/main/java/com/excercise/service/impl/SongService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/src/main/resources/hibernate.conf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/src/main/webapp/WEB-INF/views/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_orm/excercise/src/main/webapp/WEB-INF/views/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.gradle/6.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.gradle/6.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.gradle/6.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.idea/JPA.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/build/classes/java/main/vn/codegym/config/AppConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/build/classes/java/main/vn/codegym/config/AppInitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/build/classes/java/main/vn/codegym/controller/StudentController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/build/classes/java/main/vn/codegym/model/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/build/classes/java/main/vn/codegym/repository/IStudentRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/build/classes/java/main/vn/codegym/repository/StudentRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/build/classes/java/main/vn/codegym/service/IStudentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/build/classes/java/main/vn/codegym/service/StudentServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/build/libs/JPA-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/src/main/java/vn/codegym/config/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/src/main/java/vn/codegym/config/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/src/main/java/vn/codegym/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/src/main/java/vn/codegym/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/src/main/java/vn/codegym/repository/IStudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/src/main/java/vn/codegym/repository/StudentRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/src/main/java/vn/codegym/service/IStudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/src/main/java/vn/codegym/service/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/src/main/webapp/WEB-INF/views/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/src/main/webapp/WEB-INF/views/student.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/JPA/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.gradle/6.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.gradle/6.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.gradle/6.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.idea/ORM.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/build/classes/java/main/vn/codegym/controller/StudentController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/build/classes/java/main/vn/codegym/model/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/build/classes/java/main/vn/codegym/repository/ConnectionUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/build/classes/java/main/vn/codegym/repository/IStudentRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/build/classes/java/main/vn/codegym/repository/StudentRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/build/classes/java/main/vn/codegym/service/IStudentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/build/classes/java/main/vn/codegym/service/StudentServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/build/libs/ORM-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/build/resources/main/hibernate.conf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/src/main/java/vn/codegym/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/src/main/java/vn/codegym/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/src/main/java/vn/codegym/repository/ConnectionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/src/main/java/vn/codegym/repository/IStudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/src/main/java/vn/codegym/repository/StudentRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/src/main/java/vn/codegym/service/IStudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/src/main/java/vn/codegym/service/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/src/main/resources/hibernate.conf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/src/main/webapp/WEB-INF/views/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/src/main/webapp/WEB-INF/views/student.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/ORM/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../01_spring_overview/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../01_spring_overview/practice/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../02_spring_controller/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../02_spring_controller/practice/customer-management" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/build/classes/java/main/com/excersice/controller/PersonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/build/classes/java/main/com/excersice/controller/PersonController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/build/classes/java/main/com/excersice/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/build/classes/java/main/com/excersice/model/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/build/classes/java/main/com/excersice/repository/IPersonRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/build/classes/java/main/com/excersice/repository/IPersonRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/build/classes/java/main/com/excersice/repository/impl/PersonRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/build/classes/java/main/com/excersice/repository/impl/PersonRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/build/classes/java/main/com/excersice/service/IPersonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/build/classes/java/main/com/excersice/service/IPersonService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/build/classes/java/main/com/excersice/service/impl/PersonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/build/classes/java/main/com/excersice/service/impl/PersonService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/build/libs/excersice_2-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/build/libs/excersice_2-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/src/main/java/com/excersice/controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/src/main/java/com/excersice/controller/PersonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/src/main/java/com/excersice/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/src/main/java/com/excersice/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/src/main/java/com/excersice/repository/IPersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/src/main/java/com/excersice/repository/IPersonRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/src/main/java/com/excersice/repository/impl/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/src/main/java/com/excersice/repository/impl/PersonRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/src/main/java/com/excersice/service/IPersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/src/main/java/com/excersice/service/IPersonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/src/main/java/com/excersice/service/impl/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../03_data_binding_form/excersice/excersice_2/src/main/java/com/excersice/service/impl/PersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/excercise/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/excercise/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/excercise/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/excercise/model/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/excercise/repository/IProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/excercise/repository/IProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/excercise/repository/impl/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/excercise/repository/impl/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/excercise/service/IProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/excercise/service/IProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/excercise/service/impl/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/excercise/service/impl/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/excersice-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/excersice-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/excercise/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/excercise/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/excercise/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/excercise/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/excercise/repository/IProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/excercise/repository/IProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/excercise/repository/impl/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/excercise/repository/impl/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/excercise/service/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/excercise/service/IProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/excercise/service/impl/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/excercise/service/impl/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_orm/excercise/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_orm/excercise/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,15 +276,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../demo/JPA" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Codegym\C0522G1_HoangMinhTri_module_4\04_thymeleaf\excersice\src\main\java\com\excercise\config" />
+      <recent name="D:\Codegym\C0522G1_HoangMinhTri_module_4\04_thymeleaf\excersice\src\main\resources" />
       <recent name="D:\Codegym\C0522G1_HoangMinhTri_module_4\04_thymeleaf\excersice\src\main\webapp\WEB-INF" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.excercise.repository" />
     </key>
   </component>
   <component name="RunManager">
@@ -294,7 +392,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663130457783</updated>
-      <workItem from="1663130459536" duration="13414000" />
+      <workItem from="1663130459536" duration="28011000" />
     </task>
     <servers />
   </component>
@@ -318,10 +416,18 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/excercise/repository/IProductRepository.java</url>
+          <line>19</line>
+          <properties class="com.excercise.repository.IProductRepository" method="findByName">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/excercise/repository/impl/ProductRepository.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="13" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/excercise/controller/ProductController.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

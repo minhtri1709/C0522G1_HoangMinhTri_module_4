@@ -56,9 +56,9 @@
         <td th:text="${row.price}"></td>
         <td th:text="${row.description}"></td>
         <td th:text="${row.manufacturer}"></td>
-        <td><a th:href="@{/product/{id}/edit(id=${row.getId()})}">Edit</a></td>
-        <td><a th:href="@{/product/{id}/delete(id=${row.getId()})}">Delete</a></td>
-        <td><a th:href="@{/product/{id}/view(id=${row.getId()})}">View</a></td>
+        <td><a th:href="@{/product/{id}/edit(id=${row.id})}">Edit</a></td>
+        <td><a th:href="@{/product/{id}/delete(id=${row.id})}">Delete</a></td>
+        <td><a th:href="@{/product/{id}/view(id=${row.id})}">View</a></td>
     </tr>
 <!--    </tbody>-->
 </table>
