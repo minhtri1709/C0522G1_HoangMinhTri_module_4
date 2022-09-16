@@ -5,8 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="320a0c7c-8783-4dff-b5e8-7f0a326729f1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../06_jpa/excercise_1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_jpa/excercise_1/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_jpa/excercise_1/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_jpa/excercise_1/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_jpa/excercise_1/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_jpa/excercise_1/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_jpa/excercise_1/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_jpa/excercise_1/src/main/java/com/example/ProductApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_jpa/excercise_1/src/main/java/com/example/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_jpa/excercise_1/src/main/java/com/example/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_jpa/excercise_1/src/main/java/com/example/repository/IProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_jpa/excercise_1/src/main/java/com/example/service/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_jpa/excercise_1/src/main/java/com/example/service/impl/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_jpa/excercise_1/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_jpa/excercise_1/src/main/resources/templates/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_jpa/excercise_1/src/main/resources/templates/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_jpa/excercise_1/src/main/resources/templates/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_jpa/excercise_1/src/main/resources/templates/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_jpa/excercise_1/src/main/resources/templates/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_jpa/excercise_1/src/test/java/com/example/ProductApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../01_spring_overview/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../01_spring_overview/practice/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../02_spring_controller/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../02_spring_controller/practice/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/excercise/repository/impl/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/excercise/repository/impl/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/excersice-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/excersice-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/excercise/repository/impl/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/excercise/repository/impl/ProductRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +108,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../demo/JPA" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -194,6 +225,10 @@
       <option name="presentableId" value="Default" />
       <updated>1663130457783</updated>
       <workItem from="1663130459536" duration="28390000" />
+      <workItem from="1663289635144" duration="1380000" />
+      <workItem from="1663299422722" duration="83000" />
+      <workItem from="1663299758009" duration="59000" />
+      <workItem from="1663310761991" duration="1373000" />
     </task>
     <servers />
   </component>
@@ -210,6 +245,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

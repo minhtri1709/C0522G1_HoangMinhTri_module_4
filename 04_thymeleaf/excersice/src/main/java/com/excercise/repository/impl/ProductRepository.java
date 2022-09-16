@@ -108,7 +108,7 @@ public class ProductRepository implements IProductRepository {
         List<Product> productList;
         try {
             session = ConnectionUtil.sessionFactory.openSession();
-            productList = session.createQuery("from Product p where p.name like ?1").setParameter(1,"name").getResultList();
+            productList = session.createQuery("from Product p where p.name like ?1").setParameter(1,"%" +name + "%").getResultList();
         }finally {
             if(session!=null){
                 session.close();
