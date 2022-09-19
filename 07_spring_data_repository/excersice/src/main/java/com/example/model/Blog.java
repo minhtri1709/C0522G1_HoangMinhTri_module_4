@@ -1,26 +1,35 @@
 package com.example.model;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 public class Blog {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     private String name;
     private String author;
-    private String type;
     @Column(columnDefinition = "TEXT")
     private String content;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date dateCreated;
 
-    public Blog(int id, String name, String author, String type, String content) {
+    @ManyToOne
+    @JoinColumn(name = "category_id", referencedColumnName = "id")
+    private Category category;
+
+    public Blog(int id, String name, String author, String content, Date dateCreated, Category category) {
         this.id = id;
         this.name = name;
         this.author = author;
-        this.type = type;
         this.content = content;
+        this.dateCreated = dateCreated;
+        this.category = category;
     }
 
     public Blog() {
@@ -50,13 +59,6 @@ public class Blog {
         this.author = author;
     }
 
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
 
     public String getContent() {
         return content;
@@ -64,5 +66,21 @@ public class Blog {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public Date getDateCreated() {
+        return dateCreated;
+    }
+
+    public void setDateCreated(Date dateCreated) {
+        this.dateCreated = dateCreated;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
 }

@@ -33,7 +33,6 @@ public class ProductController {
 
     @PostMapping("save")
     public String save(Product product, RedirectAttributes redirect) {
-        product.setId((int) (Math.random() * 1000));
         iProductService.save(product);
         redirect.addFlashAttribute("mess", "Success");
         return "redirect:/product/list";
