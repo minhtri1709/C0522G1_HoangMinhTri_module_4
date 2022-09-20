@@ -21,13 +21,13 @@ public class CategoryController {
     public String getList(Model model) {
         List<Category> categoryList = iCategoryService.findAll();
         model.addAttribute("categories", categoryList);
-        return "/list_category";
+        return "/category/list_category";
     }
 
     @GetMapping("/{id}/edit")
     public String getEditForm(@PathVariable int id, Model model) {
         model.addAttribute("category", iCategoryService.searchById(id));
-        return "/edit_category";
+        return "/category/edit_category";
     }
 
     @PostMapping("/update")
@@ -40,7 +40,7 @@ public class CategoryController {
     @GetMapping("/delete/{id}")
     private String delete(@PathVariable int id, Model model) {
         model.addAttribute("category", iCategoryService.searchById(id));
-        return "/delete_category";
+        return "/category/delete_category";
     }
 
     @PostMapping("/delete")
@@ -52,7 +52,7 @@ public class CategoryController {
     @GetMapping("/add")
     public String create(Model model) {
         model.addAttribute("category", new Category());
-        return "/create_category";
+        return "/category/create_category";
     }
 
     @PostMapping("/save")

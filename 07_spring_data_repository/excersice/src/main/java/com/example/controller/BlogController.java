@@ -32,7 +32,7 @@ public class BlogController {
         List<Category> categoryList = iCategoryService.findAll();
         model.addAttribute("blogs", blogList);
         model.addAttribute("categories", categoryList);
-        return "list";
+        return "blog/list";
     }
 
     @GetMapping("/create")
@@ -40,7 +40,7 @@ public class BlogController {
         model.addAttribute("blogs", new Blog());
         List<Category> categories = iCategoryService.findAll();
         model.addAttribute("categoryList",categories);
-        return "create";
+        return "blog/create";
     }
 
     @PostMapping("save")
@@ -55,7 +55,7 @@ public class BlogController {
         List<Category> categoryList = iCategoryService.findAll();
         model.addAttribute("categories",categoryList);
         model.addAttribute("blogs", iBlogService.findById(id));
-        return "edit";
+        return "blog/edit";
     }
 
     @PostMapping("update")
@@ -71,7 +71,7 @@ public class BlogController {
         model.addAttribute("blogs", iBlogService.findById(id));
         List<Category> categoryList = iCategoryService.findAll();
         model.addAttribute("categories",categoryList);
-        return "delete";
+        return "/blog/delete";
     }
 
     @PostMapping("/delete")
@@ -84,14 +84,15 @@ public class BlogController {
     @GetMapping("/{id}/view")
     public String view(@PathVariable int id, Model model) {
         model.addAttribute("blogs", iBlogService.findById(id));
-        return "view";
+        return "blog/view";
     }
 
     @PostMapping("/search")
     public String search(@RequestParam String name, Pageable pageable,Model model){
         Page<Blog>blogs = iBlogService.searchByName(name,pageable);
         model.addAttribute("blogs",blogs);
-        return "list";
+        model.addAttribute("name",name);
+        return "blog/list";
     }
 
 }
