@@ -11,10 +11,15 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+
     private String firstName;
+
     private String lastName;
+
     private String phoneNumber;
+
     private String age;
+
     private String email;
 
     public User() {

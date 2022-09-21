@@ -23,8 +23,10 @@ public class UserDto implements Validator {
     @Min( value = 18,message = "Người dùng phải trên 18+")
     private String age;
 
+
+    @Email(message ="Sai quy tắc đặt tên Email")
     @NotBlank(message = "Không được để trống")
-    @Pattern(regexp = "^[a-z]+([\\_\\.]?[a-z\\d]+)*@[a-z]{3,7}\\.[a-z]{2,3}$",message = "Sai quy tắc đặt tên Email")
+//    @Pattern(regexp = "^[a-z]+([\\_\\.]?[a-z\\d]+)*@[a-z]{3,7}\\.[a-z]{2,3}$",message = "Sai quy tắc đặt tên Email")
     private String email;
 
     public String getFirstName() {
