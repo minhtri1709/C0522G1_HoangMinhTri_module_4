@@ -1,9 +1,11 @@
 package com.example.model.employee;
 
+import com.example.model.contract.Contract;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -43,6 +45,9 @@ public class Employee {
     @ManyToOne
     @JoinColumn(name = "division_id" ,referencedColumnName = "id")
     private Division division;
+
+    @OneToMany(mappedBy = "customer")
+    private Set<Contract> contractSet;
 
     public Employee() {
     }

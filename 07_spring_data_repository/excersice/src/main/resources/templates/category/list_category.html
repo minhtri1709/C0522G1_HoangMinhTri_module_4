@@ -32,7 +32,7 @@
 
     <tr th:each="row,rowStat : ${categories}">
         <td th:text="${rowStat.count}"></td>
-        <td th:text="${row.name}"></td>
+        <td th:text="${row.nameCategory}"></td>
 
         <td><a th:href="@{/category/{id}/edit(id=${row.id})}">Chỉnh sửa</a></td>
         <td><a th:href="@{/category/{id}/delete(id=${row.id})}">Xoá chủ đề</a></td>

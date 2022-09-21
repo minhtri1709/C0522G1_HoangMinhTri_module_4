@@ -1,9 +1,11 @@
 package com.example.model;
 
+import com.example.dto.BlogDto;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.util.Date;
+
 
 @Entity
 public class Blog {

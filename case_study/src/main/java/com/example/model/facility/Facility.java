@@ -1,9 +1,11 @@
 package com.example.model.facility;
 
+import com.example.model.contract.Contract;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -38,6 +40,9 @@ public class Facility {
     @ManyToOne
     @JoinColumn(name = "rent_type_id", referencedColumnName = "id")
     private RentType rentType;
+
+    @OneToMany(mappedBy = "customer")
+    private Set<Contract> contractSet;
 
     public Facility() {
     }

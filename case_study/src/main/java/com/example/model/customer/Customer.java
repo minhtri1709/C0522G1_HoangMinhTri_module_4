@@ -1,9 +1,11 @@
 package com.example.model.customer;
 
+import com.example.model.contract.Contract;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -33,6 +35,9 @@ public class Customer {
     @ManyToOne
     @JoinColumn(name = "customer_type_id",referencedColumnName = "id")
     private CustomerType customerType;
+
+    @OneToMany(mappedBy = "customer")
+    private Set<Contract> contractSet;
 
 
     public Customer() {

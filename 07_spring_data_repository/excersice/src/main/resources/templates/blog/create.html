@@ -29,7 +29,7 @@
             <div>
                 <label>Thể loại</label>
                 <select th:field="*{category}">
-                    <option th:each=" item: ${categoryList}" th:text="${item.name}" th:value="${item.id}">
+                    <option th:each=" item: ${categoryList}" th:text="${item.nameCategory}" th:value="${item.id}">
                     </option>
                 </select>
             </div>

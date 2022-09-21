@@ -10,7 +10,7 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    private String name;
+    private String nameCategory;
 
     @OneToMany(mappedBy = "category")
     private Set<Blog> blogs;
@@ -20,7 +20,7 @@ public class Category {
 
     public Category(int id, String name) {
         this.id = id;
-        this.name = name;
+        this.nameCategory = name;
     }
 
     public Set<Blog> getBlogs() {
@@ -39,11 +39,11 @@ public class Category {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getNameCategory() {
+        return nameCategory;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNameCategory(String name) {
+        this.nameCategory = name;
     }
 }

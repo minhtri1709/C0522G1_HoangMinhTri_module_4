@@ -37,34 +37,24 @@
     <span style="color: red" th:text="${message}"></span>
 </div>
 <table class="table table-striped" id="product">
-<!--    <thead th:replace="/layout :: head">-->
+    <!--    <thead th:replace="/layout :: head">-->
     <tr>
         <th>STT</th>
         <th>Tên Blog</th>
-        <th>Tác giả</th>
-        <th>Ngày viết</th>
         <th>Thể loại</th>
-        <th>Chỉnh sửa</th>
-        <th>Xoá Blog</th>
-        <th>Đọc Blog</th>
     </tr>
-<!--    </thead>-->
-<!--    <tbody>-->
+    <!--    </thead>-->
+    <!--    <tbody>-->
     <tr th:each="row,rowStat : ${blogs}">
-        <td th:text="${rowStat.count + blogs.number * 2}"></td>
-        <td th:text="${row.name}"></td>
-        <td th:text="${row.author}"></td>
-        <td th:text="${row.dateCreated}"></td>
-        <td th:text="${row.category.nameCategory}"></td>
+        <td th:text="${rowStat.count}"></td>
+        <td th:text="${row.getTitleDto()}"></td>
+        <td th:text="${row.getCategoryDto()}"></td>
 
-        <td><a th:href="@{/blog/{id}/edit(id=${row.id})}">Chỉnh sửa</a></td>
-        <td><a th:href="@{/blog/{id}/delete(id=${row.id})}">Xoá Blog</a></td>
-        <td><a th:href="@{/blog/{id}/view(id=${row.id})}">Đọc Blog</a></td>
     </tr>
-<!--    </tbody>-->
+    <!--    </tbody>-->
 </table>
-<a th:href="@{'/blog/search'(page=${blogs.number - 1}, name=${name})}" th:if="${blogs.hasPrevious()}">Trang trước</a>
-<span th:text="${blogs.number + 1}"></span>/<span th:text="${blogs.totalPages}"></span>
-<a th:href="@{'/blog/search'(page=${blogs.number + 1}, name=${name})}" th:if="${blogs.hasNext()}">Trang sau</a>
+<!--<a th:href="@{'/blog/search'(page=${blogs.number - 1}, name=${name})}" th:if="${blogs.hasPrevious()}">Trang trước</a>-->
+<!--<span th:text="${blogs.number + 1}"></span>/<span th:text="${blogs.totalPages}"></span>-->
+<!--<a th:href="@{'/blog/search'(page=${blogs.number + 1}, name=${name})}" th:if="${blogs.hasNext()}">Trang sau</a>-->
 </body>
 </html>

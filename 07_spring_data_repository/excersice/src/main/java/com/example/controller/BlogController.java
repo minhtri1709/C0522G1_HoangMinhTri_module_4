@@ -1,5 +1,6 @@
 package com.example.controller;
 
+import com.example.dto.BlogDto;
 import com.example.model.Blog;
 import com.example.model.Category;
 import com.example.service.IBlogService;
@@ -24,7 +25,7 @@ public class BlogController {
 
     @Autowired
     private ICategoryService iCategoryService;
-/*
+
 
     @GetMapping("/list")
     public String getList(@PageableDefault(value = 2, sort = "dateCreated") Pageable pageable, Model model) {
@@ -33,7 +34,7 @@ public class BlogController {
         model.addAttribute("blogs", blogList);
         model.addAttribute("categories", categoryList);
         return "blog/list";
-    }*/
+    }
 
     @GetMapping("/create")
     public String getCreate(Model model) {
@@ -87,12 +88,19 @@ public class BlogController {
         return "blog/view";
     }
 
-    @GetMapping ("/search")
-    public String search(@PageableDefault(value = 2)Pageable pageable, @RequestParam(defaultValue = "") String name, Model model){
-        Page<Blog>blogs = iBlogService.searchByName(name,pageable);
-        model.addAttribute("blogs",blogs);
-        model.addAttribute("name",name);
-        return "blog/list";
-    }
+//    @GetMapping ("/search")
+//    public String search(@PageableDefault(value = 2)Pageable pageable, @RequestParam(defaultValue = "") String name, Model model){
+//        Page<Blog>blogs = iBlogService.searchByName(name,pageable);
+//        model.addAttribute("blogs",blogs);
+//        model.addAttribute("name",name);
+//        return "blog/list";
+//    }
+
+  @GetMapping("/dto")
+    public String getIndex(Model model){
+        List<BlogDto> blogDtos = iBlogService.findAllBlogDto();
+        model.addAttribute("blogs", blogDtos);
+        return "blog/index";
+  }
 
 }
