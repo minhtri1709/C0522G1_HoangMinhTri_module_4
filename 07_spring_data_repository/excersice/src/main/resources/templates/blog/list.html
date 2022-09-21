@@ -22,7 +22,7 @@
         </a>
     </div>
     <div class="col-lg-6">
-        <form class="d-flex" action="/blog/search" method="post" style="transform: translateX(380px)">
+        <form class="d-flex" action="/blog/search" method="get" style="transform: translateX(380px)">
 
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="name" style="width: 300px">
             <button class="btn btn-outline-success" type="submit">Search</button>
@@ -63,8 +63,8 @@
     </tr>
 <!--    </tbody>-->
 </table>
-<a th:href="@{'/blog/list'(page=${blogs.number - 1},name=${name})}" th:if="${blogs.hasPrevious()}">Trang trước</a>
+<a th:href="@{'/blog/search'(page=${blogs.number - 1}, name=${name})}" th:if="${blogs.hasPrevious()}">Trang trước</a>
 <span th:text="${blogs.number + 1}"></span>/<span th:text="${blogs.totalPages}"></span>
-<a th:href="@{'/blog/list'(page=${blogs.number + 1},name=${name})}" th:if="${blogs.hasNext()}">Trang sau</a>
+<a th:href="@{'/blog/search'(page=${blogs.number + 1}, name=${name})}" th:if="${blogs.hasNext()}">Trang sau</a>
 </body>
 </html>

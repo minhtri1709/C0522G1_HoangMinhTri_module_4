@@ -16,7 +16,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import java.util.List;
 
 @Controller
-@RequestMapping("blog/")
+@RequestMapping("blog")
 public class BlogController {
 
     @Autowired
@@ -24,7 +24,7 @@ public class BlogController {
 
     @Autowired
     private ICategoryService iCategoryService;
-
+/*
 
     @GetMapping("/list")
     public String getList(@PageableDefault(value = 2, sort = "dateCreated") Pageable pageable, Model model) {
@@ -33,7 +33,7 @@ public class BlogController {
         model.addAttribute("blogs", blogList);
         model.addAttribute("categories", categoryList);
         return "blog/list";
-    }
+    }*/
 
     @GetMapping("/create")
     public String getCreate(Model model) {
@@ -43,14 +43,14 @@ public class BlogController {
         return "blog/create";
     }
 
-    @PostMapping("save")
+    @PostMapping("/save")
     public String save(Blog blog, RedirectAttributes redirect) {
         iBlogService.save(blog);
         redirect.addFlashAttribute("mess", "Success");
         return "redirect:/blog/list";
     }
 
-    @GetMapping("{id}/edit")
+    @GetMapping("/{id}/edit")
     public String getEdit(@PathVariable int id, Model model) {
         List<Category> categoryList = iCategoryService.findAll();
         model.addAttribute("categories",categoryList);
@@ -58,7 +58,7 @@ public class BlogController {
         return "blog/edit";
     }
 
-    @PostMapping("update")
+    @PostMapping("/update")
     public String update(Blog blog, RedirectAttributes redirectAttributes) {
         iBlogService.update(blog);
         redirectAttributes.addFlashAttribute("message", "Suceess");
@@ -66,7 +66,7 @@ public class BlogController {
     }
 
 
-    @GetMapping("{id}/delete")
+    @GetMapping("/{id}/delete")
     public String getDelete(@PathVariable int id, Model model) {
         model.addAttribute("blogs", iBlogService.findById(id));
         List<Category> categoryList = iCategoryService.findAll();
@@ -87,8 +87,8 @@ public class BlogController {
         return "blog/view";
     }
 
-    @PostMapping("/search")
-    public String search(@RequestParam String name, Pageable pageable,Model model){
+    @GetMapping ("/search")
+    public String search(@PageableDefault(value = 2)Pageable pageable, @RequestParam(defaultValue = "") String name, Model model){
         Page<Blog>blogs = iBlogService.searchByName(name,pageable);
         model.addAttribute("blogs",blogs);
         model.addAttribute("name",name);
