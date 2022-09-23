@@ -15,7 +15,7 @@ public class LogAspect {
 
     int count = 0;
 
-    @Pointcut("within (com.example.controller.*)")
+    @Pointcut("within (com.example.controller.BookController.*)")
     public void allMethod(){
     }
 
