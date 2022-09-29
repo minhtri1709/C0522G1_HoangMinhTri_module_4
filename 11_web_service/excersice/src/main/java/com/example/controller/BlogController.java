@@ -6,14 +6,12 @@ import com.example.service.ICategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
+@CrossOrigin("*")
 public class BlogController {
 
     @Autowired
@@ -30,7 +28,6 @@ public class BlogController {
             return new ResponseEntity<List<Blog>>(HttpStatus.NO_CONTENT);
         }
         return new ResponseEntity<List<Blog>>(blogList, HttpStatus.OK);
-
     }
 
     @RequestMapping(value = "blog/{id}/view", method = RequestMethod.GET)
@@ -38,6 +35,16 @@ public class BlogController {
         Blog blog = iBlogService.searchById(id);
         if (blog == null) {
             System.out.println("Unable to view. Blog with id" + id + " not found.");
+            return new ResponseEntity<Blog>(HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<Blog>(HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "blog/{name}/search", method = RequestMethod.GET)
+    public ResponseEntity<Blog> searchByName(@PathVariable String name) {
+        Blog blog = iBlogService.searchByName(name);
+        if (blog == null) {
+            System.out.println("Unable to view. Blog with name" + name + " not found.");
             return new ResponseEntity<Blog>(HttpStatus.NOT_FOUND);
         }
         return new ResponseEntity<Blog>(HttpStatus.OK);

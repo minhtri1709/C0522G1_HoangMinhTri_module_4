@@ -1,5 +1,6 @@
 package com.example.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
@@ -14,14 +15,18 @@ public class Blog {
     private int id;
 
     private String name;
+
     private String author;
+
     @Column(columnDefinition = "TEXT")
     private String content;
+
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date dateCreated;
 
     @ManyToOne
     @JoinColumn(name = "category_id", referencedColumnName = "id")
+    @JsonBackReference
     private Category category;
 
     public Blog(int id, String name, String author, String content, Date dateCreated, Category category) {

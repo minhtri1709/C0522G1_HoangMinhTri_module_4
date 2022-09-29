@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+<h1>Phone List</h1>
+<div class="modal" tabindex="-1" id="modalCreate">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="text" placeholder="Input Producer" id="textProducer">
+                <input type="text" placeholder="Input Model" id="textModel">
+                <input type="number" placeholder="Input Price" id="textPrice">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="btn-create">Create</button>
+            </div>
+        </div>
+    </div>
+</div>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Producer</th>
+        <th>Model</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            <span>Loading...</span>
+        </td>
+
+    </tr>
+    </tbody>
+</table>
+</body>
+
+<script src="jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+
+
+  $(document).ready(function () {
+      function init() {
+          $.ajax({
+              url: "http://localhost:8080/phone/v1",
+              type: "GET",
+              dataType: "json",
+              success: function (data) {
+                  let tr = [];
+                  for (let i = 0; i < data.length; i++) {
+                      tr.push("<tr>");
+                      tr.push("<td>" + data[i].id + "</td>");
+                      tr.push("<td>" + data[i].producer + "</td>");
+                      tr.push("<td>" + data[i].model + "</td>");
+                      tr.push("<td>" + data[i].price + "</td>");
+                      tr.push("</tr>");
+                  }
+                  $("table").append(tr.join(""));
+              }
+          })
+      }
+  })
+
+    $("#btn-create").click(function () {
+        let producer = $("#textProducer").val()
+        let model = $("#textModel").val()
+        let price = $("#textPrice").val()
+
+        $.ajax(
+            {
+                url: "http://localhost:8080/phone/v1",
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify({'producer': producer, 'model': model, 'price': price}),
+                success: function () {
+                    $('#modalCreate').modal('hide')
+                    init();
+                }
+            }
+        )
+    })
+
+
+</script>
+</html>

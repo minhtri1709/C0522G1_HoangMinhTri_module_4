@@ -30,4 +30,9 @@ public class BlogService implements IBlogService {
         return iBlogRepository.searchById(id);
     }
 
+    @Override
+    public Blog searchByName(String name) {
+        return iBlogRepository.searchByName(name);
+    }
+
 }

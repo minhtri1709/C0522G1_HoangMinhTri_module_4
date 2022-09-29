@@ -11,4 +11,6 @@ public interface IBlogService {
     List<Blog> findByCategory(int id);
 
     Blog searchById(int id);
+
+    Blog searchByName(String name);
 }

@@ -7,12 +7,12 @@
 <body>
 <h3>Xoá Blog</h3>
 <p>
-    <a href="/blog/list">
+    <a href="/12_jquery_ajax/excercise/blog/blog_fe/list">
         Trở về trang Blog
     </a>
 </p>
 <div id="form">
-    <form action="/blog/delete" th:object="${blogs}"
+    <form action="/12_jquery_ajax/excercise/blog/blog_fe/delete" th:object="${blogs}"
           method="POST" novalidate="novalidate">
         <input type="hidden" th:field="*{id}"/>
         <div>
