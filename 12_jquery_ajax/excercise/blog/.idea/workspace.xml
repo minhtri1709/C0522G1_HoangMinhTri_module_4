@@ -5,30 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68dfa6ee-c2b4-413c-9101-7960dc5fb46d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/blog_be/src/main/java/com/example/controller/BlogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog_be/src/main/java/com/example/controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog_be/src/main/java/com/example/model/Blog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog_be/src/main/java/com/example/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog_be/src/main/java/com/example/repository/IBlogRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog_be/src/main/java/com/example/repository/ICategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog_be/src/main/java/com/example/service/IBlogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog_be/src/main/java/com/example/service/ICategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog_be/src/main/java/com/example/service/impl/BlogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog_be/src/main/java/com/example/service/impl/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog_fe/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog_fe/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../08_validation/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../08_validation/.idea/08_validation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../08_validation/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../08_validation/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../08_validation/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../13_spring_security/excercise/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../13_spring_security/excercise/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../13_spring_security/excercise/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../13_spring_security/excercise/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../13_spring_security/excercise/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../13_spring_security/excercise/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../13_spring_security/excercise/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../13_spring_security/excercise/src/main/java/com/example/ExcerciseApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../13_spring_security/excercise/src/main/java/com/example/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../13_spring_security/excercise/src/main/java/com/example/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../13_spring_security/excercise/src/main/java/com/example/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../13_spring_security/excercise/src/main/java/com/example/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../13_spring_security/excercise/src/main/java/com/example/model/UserDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../13_spring_security/excercise/src/main/java/com/example/repository/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../13_spring_security/excercise/src/main/java/com/example/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../13_spring_security/excercise/src/main/java/com/example/service/impl/UserDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../13_spring_security/excercise/src/main/java/com/example/service/impl/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../13_spring_security/excercise/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../13_spring_security/excercise/src/main/resources/templates/page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../13_spring_security/excercise/src/test/java/com/example/ExcerciseApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../01_spring_overview/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../01_spring_overview/practice/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../02_spring_controller/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../02_spring_controller/practice/customer-management" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06_jpa/excercies_2/src/main/resources/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../06_jpa/excercies_2/src/main/resources/templates/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06_jpa/excercies_2/src/main/resources/templates/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../06_jpa/excercies_2/src/main/resources/templates/delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06_jpa/excercies_2/src/main/resources/templates/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../06_jpa/excercies_2/src/main/resources/templates/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06_jpa/excercies_2/src/main/resources/templates/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../06_jpa/excercies_2/src/main/resources/templates/view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07_spring_data_repository/excersice/src/main/resources/templates/blog/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../07_spring_data_repository/excersice/src/main/resources/templates/blog/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07_spring_data_repository/excersice/src/main/resources/templates/blog/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../07_spring_data_repository/excersice/src/main/resources/templates/blog/delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07_spring_data_repository/excersice/src/main/resources/templates/blog/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../07_spring_data_repository/excersice/src/main/resources/templates/blog/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07_spring_data_repository/excersice/src/main/resources/templates/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../07_spring_data_repository/excersice/src/main/resources/templates/blog/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07_spring_data_repository/excersice/src/main/resources/templates/blog/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../07_spring_data_repository/excersice/src/main/resources/templates/blog/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07_spring_data_repository/excersice/src/main/resources/templates/blog/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../07_spring_data_repository/excersice/src/main/resources/templates/blog/view.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +57,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/example" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -82,6 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1664415124485</updated>
       <workItem from="1664415125790" duration="1136000" />
+      <workItem from="1664526222552" duration="20000" />
     </task>
     <servers />
   </component>
@@ -98,5 +103,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
