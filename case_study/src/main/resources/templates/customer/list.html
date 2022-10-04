@@ -4,20 +4,34 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <style>
+        body {
+            background-image: url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-attachment: fixed;
+            background-size: 100%;
+        }
+    </style>
 </head>
 <body>
 <head th:insert="/index :: head"></head>
 <div class="text-center">
-    <h1>
+    <h3>
         Customer's List
-    </h1>
+    </h3>
 </div>
 <div class="row">
     <nav class="navbar navbar-expand-lg py-0 my-0">
         <div class="container-fluid">
             <a href="/customer/create">
-                <button class="btn btn-success btn-outline-secondary btn-sm">
-                    <span class="fa-solid fa-person-circle-plus text-light h5 my-auto me-1"></span>
+                <button class="btn btn-secondary btn-outline-secondary btn-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-person-plus" viewBox="0 0 16 16">
+                        <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                        <path fill-rule="evenodd"
+                              d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                    </svg>
                     <span class="text-light"> Add new Customer</span>
                 </button>
             </a>
@@ -36,7 +50,7 @@
     </nav>
 </div>
 <div class="row">
-    <table class="table table-bordered text-center">
+    <table class="table table-light table-striped table-bordered text-center">
         <thead>
         <tr>
             <th scope="col">Serial</th>
@@ -45,7 +59,6 @@
             <th scope="col">Address</th>
             <th scope="col">Update</th>
             <th scope="col">Delete</th>
-            <th scope="col">View</th>
         </tr>
         </thead>
         <tbody>
@@ -58,7 +71,10 @@
             <td>
                 <a th:href="@{customer/{id}/edit(id=${row.id})}">
                     <button class="btn btn-primary btn-outline-secondary btn-sm">
-                        <span class="fa-solid fa-user-pen text-light h6 m-auto px-2"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-brush-fill" viewBox="0 0 16 16">
+                            <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04z"/>
+                        </svg>
                     </button>
                 </a>
             </td>
@@ -66,14 +82,23 @@
                 <button th:attr="onclick=|deleteCustomer('${row.id}', '${row.name}')|"
                         class="btn btn-danger btn-outline-secondary btn-sm" data-bs-toggle="modal"
                         data-bs-target="#deleteCustomer">
-                    <span class="fa-solid fa-person-circle-minus text-light h6 m-auto px-2"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-person-dash-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11 7.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg>
                 </button>
             </td>
-
-<!-                                                                                                       pp
         </tr>
         </tbody>
     </table>
+    <div>
+        <a th:href="@{'/customer'(page=${customerList.number - 1})}"
+           th:if="${customerList.hasPrevious()}"><i class="fa-solid fa-backward"></i>Previous</a>
+        <span th:text="${customerList.number + 1}"></span>/<span th:text="${customerList.totalPages}"></span>
+        <a th:href="@{'/customer'(page=${customerList.number + 1})}"
+           th:if="${customerList.hasNext()}">Next<i class="fa-solid fa-forward"></i></a>
+    </div>
 
     <!--     Modal -->
     <div class="modal fade" id="deleteCustomer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -86,102 +111,26 @@
                 </div>
                 <form th:action="@{/customer/delete}">
                     <div class="modal-body">
-                        <span class="h6">Khách hàng:</span><strong id="nameDelete" class="text-danger ps-2"></strong>
+                        <span class="h6">Customer:</span><strong id="nameDelete" class="text-danger ps-2"></strong>
                         <input type="hidden" name="idDelete" id="idDelete" readonly/>
                     </div>
 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                        <button type="submit" class="btn btn-danger" value="delete">Xóa</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-danger" value="delete">Delete</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-
-<!--    <div class="modal fade" id="viewCustomer" tabindex="-1" aria-labelledby="exampleModalLabel1"-->
-    <!--         aria-hidden="true">-->
-    <!--        <div class="modal-dialog">-->
-    <!--            <div class="modal-content">-->
-    <!--                <div class="modal-header">-->
-    <!--                    <h4 class="modal-title text-center" id="exampleModalLabel2">Thông tin khách hàng</h4>-->
-    <!--                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
-    <!--                </div>-->
-
-    <!--                <div class="modal-body">-->
-    <!--                    <table>-->
-    <!--                        <tr>-->
-    <!--                            <td class="h6 pe-3">Tên khách hàng:</td>-->
-    <!--                            <td id="name" class="text-primary h6"></td>-->
-    <!--                        </tr>-->
-
-    <!--                        <tr>-->
-    <!--                            <td class="h6 pe-3">Ngày sinh:</td>-->
-    <!--                            <td id="birthday" class="text-primary"></td>-->
-    <!--                        </tr>-->
-
-    <!--                        <tr>-->
-    <!--                            <td class="h6 pe-3">Giới tính:</td>-->
-    <!--                            <td id="gender" class="text-primary"></td>-->
-    <!--                        </tr>-->
-
-    <!--                        <tr>-->
-    <!--                            <td class="h6 pe-3">Số CMND/CCCD:</td>-->
-    <!--                            <td id="idCard" class="text-primary"></td>-->
-    <!--                        </tr>-->
-
-    <!--                        <tr>-->
-    <!--                            <td class="h6 pe-3">Số điện thoại:</td>-->
-    <!--                            <td id="phone" class="text-primary"></td>-->
-    <!--                        </tr>-->
-
-    <!--                        <tr>-->
-    <!--                            <td class="h6 pe-3">Email:</td>-->
-    <!--                            <td id="email" class="text-primary"></td>-->
-    <!--                        </tr>-->
-
-    <!--                        <tr>-->
-    <!--                            <td class="h6 pe-3">Địa chỉ:</td>-->
-    <!--                            <td id="address" class="text-primary"></td>-->
-    <!--                        </tr>-->
-
-    <!--                        <tr>-->
-    <!--                            <td class="h6 pe-3">Loại khách:</td>-->
-    <!--                            <td id="type" class="text-primary"></td>-->
-    <!--                        </tr>-->
-    <!--                    </table>-->
-    <!--                </div>-->
-
-    <!--                <div class="modal-footer">-->
-    <!--                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-
 </div>
 <script>
     function deleteCustomer(id, name) {
-        document.getElementById("isDelete").value = id;
+        document.getElementById("idDelete").value = id;
         document.getElementById("nameDelete").innerHTML = name;
-        alert(id)
+
     }
 
-    function viewCustomer(name, birthday, gender, idCard, phone, email, address, type) {
-        document.getElementById("name").innerText = name;
-        document.getElementById("birthday").innerText = birthday;
-        if (gender === 0) {
-            document.getElementById("gender").innerText = "Nam";
-        } else if (gender === 1) {
-            document.getElementById("gender").innerText = "Nữ";
-        }
-        document.getElementById("idCard").innerText = idCard;
-        document.getElementById("phone").innerText = phone;
-        document.getElementById("email").innerText = email;
-        document.getElementById("address").innerText = address;
-        document.getElementById("type").innerText = type;
-        debugger
-    }
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

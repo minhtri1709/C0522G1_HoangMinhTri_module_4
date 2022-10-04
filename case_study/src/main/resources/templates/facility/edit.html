@@ -16,11 +16,11 @@
 </head>
 <body>
 <head th:insert="/index :: head"></head>
-<div class="text-center"><h2>Edit Customer</h2></div>
-<div><a href="/customer"><i class="fa-sharp fa-solid fa-house-user"></i>Back To Employee List</a></div>
+<div class="text-center"><h2>Edit Facility</h2></div>
+<div><a href="/facility"><i class="fa-sharp fa-solid fa-house-user"></i>Back To Facility List</a></div>
 <div id="form" style="text-align: center">
 
-    <form th:action="@{/customer/save}" th:object="${customerDto}"
+    <form th:action="@{/facility/save}" th:object="${customerDto}"
           method="post" novalidate="novalidate">
         <input type="hidden" th:field="*{id}"/>
         <div>

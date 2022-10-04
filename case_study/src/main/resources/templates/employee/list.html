@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <style>
+        body {
+            background-image: url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-attachment: fixed;
+            background-size: 100%;
+        }
+    </style>
 </head>
 <body>
 <head th:insert="/index :: head"></head>
@@ -18,7 +29,12 @@
         <div class="container-fluid">
             <a href="/employee?action=create">
                 <button class="btn btn-success btn-outline-secondary btn-sm">
-                    <span class="fa-solid fa-person-circle-plus text-light h5 my-auto me-1"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-person-plus" viewBox="0 0 16 16">
+                        <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                        <path fill-rule="evenodd"
+                              d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                    </svg>
                     <span class="text-light"> Add new Employee</span>
                 </button>
             </a>
@@ -51,36 +67,44 @@
         </tr>
         </thead>
         <tbody>
-        <tr th:each="row, rowStat : ${facilityList}">
         <tr>
-            <th th:text="${rowStat.count}"></th>
-            <td class="text-center" th:text="${row.name}"></td>
-            <td class="text-center" th:text="${row.area}"></td>
-            <td class="text-center" th:text="${row.cost}"></td>
-            <td class="text-center" th:text=${row.standardRoom}""></td>
+            <!--            th:each="row, rowStat : ${facilityList}"-->
+        <tr>
+            <!--            <th th:text="${rowStat.count}"></th>-->
+            <!--            <td class="text-center" th:text="${row.name}"></td>-->
+            <!--            <td class="text-center" th:text="${row.area}"></td>-->
+            <!--            <td class="text-center" th:text="${row.cost}"></td>-->
+            <!--            <td class="text-center" th:text=${row.standardRoom}""></td>-->
             <td>
-                <a th:href="@{facility/{id}/edit(id=${row.id})}">
-                    <button class="btn btn-primary btn-outline-secondary btn-sm">
-                        <span class="fa-solid fa-user-pen text-light h6 m-auto px-2"></span>
-                    </button>
-                </a>
+                <!--                <a th:href="@{employee/{id}/edit(id=${row.id})}">-->
+                <button class="btn btn-primary btn-outline-secondary btn-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-brush-fill" viewBox="0 0 16 16">
+                        <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04z"/>
+                    </svg>
+                </button>
+                <!--                </a>-->
             </td>
             <td class="text-center">
                 <button onclick="modalDelete('${employee.getId()}','${employee.getName()}')" type="button"
                         class="btn btn-primary"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
-                    <i class="fa-solid fa-trash"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-person-dash-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11 7.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg>
                 </button>
             </td>
             <td>
-                <a th:href="@{facility/{id}/edit(id=${row.id})}">
-                    <button class="btn btn-primary btn-outline-secondary btn-sm">
+                <!--                <a th:href="@{facility/{id}/edit(id=${row.id})}">-->
+                <button class="btn btn-primary btn-outline-secondary btn-sm">
                         <span>
                             <i class="fa fa-street-view" aria-hidden="true"></i>
                         </span>
-                    </button>
-                </a>
+                </button>
+                <!--                </a>-->
             </td>
         </tr>
         </th:each>
@@ -88,7 +112,7 @@
     </table>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <form action="/facility">
                 <div class="modal-content">
@@ -111,7 +135,97 @@
         </div>
     </div>
 
+
+    <!--Modal view-->
+    <div class="modal fade" id="viewEmployee" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modalCSS">
+                <div class="modal-header">
+                    <h4 class="modal-title text-center" id="exampleModalLabel2">Thông tin nhân viên</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <table>
+                        <tr>
+                            <td class="h6 pe-3">Name:</td>
+                            <td id="name" class="text-primary h6"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="h6 pe-3">Day Of Birth:</td>
+                            <td id="birthday" class="text-primary"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="h6 pe-3">ID:</td>
+                            <td id="idCard" class="text-primary"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="h6 pe-3">Salary:</td>
+                            <td id="salary" class="text-primary"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="h6 pe-3">Phone Number:</td>
+                            <td id="phone" class="text-primary"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="h6 pe-3">Email:</td>
+                            <td id="email" class="text-primary"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="h6 pe-3">Address:</td>
+                            <td id="address" class="text-primary"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="h6 pe-3">Education Degree:</td>
+                            <td id="educationDegree" class="text-primary"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="h6 pe-3">Division:</td>
+                            <td id="division" class="text-primary"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="h6 pe-3">Position:</td>
+                            <td id="position" class="text-primary"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<script>
+    function viewEmployee(name, birthday, idCard, salary, phone, email, address, position, educationDegree, division) {
+        document.getElementById("name").innerText = name;
+        document.getElementById("birthday").innerText = birthday;
+        document.getElementById("idCard").innerText = idCard;
+        document.getElementById("salary").innerText = "₫ " + salary;
+        document.getElementById("phone").innerText = phone;
+        document.getElementById("email").innerText = email;
+        document.getElementById("address").innerText = address;
+        document.getElementById("position").innerText = position;
+        document.getElementById("educationDegree").innerText = educationDegree;
+        document.getElementById("division").innerText = division;
+    }
+
+    function deleteEmployee(id, name) {
+        document.getElementById("idDelete").value = id;
+        document.getElementById("nameDelete").innerText = name;
+
+    }
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>

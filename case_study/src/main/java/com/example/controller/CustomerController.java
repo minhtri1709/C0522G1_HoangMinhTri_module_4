@@ -6,6 +6,8 @@ import com.example.service.customer.ICustomerService;
 import com.example.service.customer.ICustomerTypeService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -41,8 +43,8 @@ public class CustomerController {
     }
 
     @GetMapping()
-    public String showList(Model model){
-        model.addAttribute("customerList", iCustomerService.findAll());
+    public String showList(@PageableDefault(value = 5) Pageable pageable, Model model){
+        model.addAttribute("customerList", iCustomerService.findAll(pageable));
         return "/customer/list";
     }
 
@@ -54,6 +56,9 @@ public class CustomerController {
         return "customer/edit";
     }
 
-
-
+    @GetMapping("/delete")
+    public String delete(@RequestParam(value = "idDelete")int id){
+        iCustomerService.delete(id);
+        return "redirect:/customer";
+    }
 }

@@ -4,9 +4,10 @@ import com.example.model.customer.Customer;
 import com.example.repository.customer.ICustomerRepository;
 import com.example.service.customer.ICustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -16,8 +17,8 @@ public class CustomerService implements ICustomerService {
 
 
     @Override
-    public List<Customer> findAll() {
-        return iCustomerRepository.findAll();
+    public Page<Customer> findAll(Pageable pageable) {
+        return iCustomerRepository.searchAll(pageable);
     }
 
     @Override
@@ -26,8 +27,8 @@ public class CustomerService implements ICustomerService {
     }
 
     @Override
-    public void delete(Customer customer) {
-        iCustomerRepository.delete(customer);
+    public void delete(int id) {
+        iCustomerRepository.deleteLogic(id);
     }
 
     @Override

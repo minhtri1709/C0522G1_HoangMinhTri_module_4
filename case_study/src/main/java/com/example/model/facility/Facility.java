@@ -33,6 +33,8 @@ public class Facility {
 
     private String facilityFree;
 
+    private boolean isDelete;
+
     @ManyToOne
     @JoinColumn(name = "facility_type_id", referencedColumnName = "id")
     private FacilityType facilityType;
