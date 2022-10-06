@@ -27,6 +27,15 @@
             /*background-image: url("https://t4.ftcdn.net/jpg/03/22/45/85/360_F_322458522_fWMrqLWx59EDO1jYpMq0ACdkzv8YEYUj.jpg");*/
         }
 
+        body {
+            background-image: url('https://furamavietnam.com/wp-content/uploads/2018/08/BG2.jpg');
+            background-position: right bottom;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow-x: hidden;
+        }
+
         input[type=submit] {
             background-color: #22ff00;
             width: 100px;
@@ -37,59 +46,65 @@
     </style>
 </head>
 <body>
-<header th:fragment="head" style="background-color: chocolate;height: 100px; font-weight: bold; font-size: xxx-large;text-align: center">
-   Furama Resort
-</header>
-<nav class="navbar bg-light navbar-expand-lg" th:fragment="head">
-    <div class="container-fluid mx-5">
-        <a class="navbar-brand" href="/">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown ms-3">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="false">Employee</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/employee">Employee list</a></li>
-                        <li><a class="dropdown-item" href="/employee/create">Add new Employee</a></li>
-                    </ul>
-                </li>
 
-                <li class="nav-item dropdown ms-3">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="false">Customer</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/customer">Customer list</a></li>
-                        <li><a class="dropdown-item" href="/customer/create">Add new Customer</a></li>
-                    </ul>
-                </li>
+<div class="container-fluid ">
 
-                <li class="nav-item dropdown ms-3">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="false">Service</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="facility">Facility list</a></li>
-                        <li><a class="dropdown-item" href="facility/create">Add new Facility</a></li>
-                    </ul>
-                </li>
-
-                <li class="nav-item dropdown ms-3">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="false">Contract</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Contract list</a></li>
-                        <li><a class="dropdown-item" href="#">Add new Contract</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+    <div class="row" th:fragment="head">
+        <a class="navbar-brand" href="http://localhost:8080/">
+            <img src="https://furamavietnam.com/wp-content/uploads/2018/10/logo.png" alt="" width="90" height="100">
+        </a>
     </div>
-</nav>
-<div class="container-fluid" style="height: 520px;padding: 0">
+
+    <div class="row"  th:fragment="head">
+        <nav class="navbar navbar-expand-lg" style="background-color: #addccf">
+            <div class="container-fluid mx-5">
+                <a class="navbar-brand" style="color: black" href="/">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown ms-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false"style="color: black">Employee</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/employee"style="color: black">Employee list</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown ms-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false"style="color: black">Customer</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"style="color: black" href="/customer">Customer list</a></li>
+                                <li><a class="dropdown-item"style="color: black" href="/customer/create">Add new Customer</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown ms-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false"style="color: black">Service</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"style="color: black" href="/facility">Facility list</a></li>
+                                <li><a class="dropdown-item" style="color: black" href="/facility/create">Add new Facility</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown ms-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false"style="color: black">Contract</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"style="color: black" href="/contract">Contract list</a></li>
+                                <li><a class="dropdown-item" style="color: black" href="/contract/create">Add new Contract</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
     <div class="row" style="width: 100%;margin-left: 10px">
         <img width="100%" height="520" id="img" onclick="changeImage()"
              src="https://furamavietnam.com/wp-content/uploads/2018/11/Vietnam_Danang_Furama_Resort_Exterior_Courtyard-Night.jpg"
@@ -109,39 +124,76 @@
         </p>
         <div class="col-4">
             <p style="text-align: justify">
-                Hướng ra bãi biển Đà Nẵng trải dài cát trắng, Furama Resort Đà Nẵng là cửa ngõ đến với 3 di sản văn hoá
-                thế giới: Hội An (20 phút), Mỹ Sơn (90 phút) và Huế (2 tiếng. 196 phòng hạng sang cùng với 70 căn biệt
-                thự từ hai đến bốn phòng ngủ có hồ bơi riêng đều được trang trí trang nhã, theo phong cách thiết kế
-                truyền thống của Việt Nam và kiến trúc thuộc địa của Pháp, biến Furama thành khu nghỉ dưỡng danh giá
-                nhất tại Việt Nam – vinh dự được đón tiếp nhiều người nổi tiếng, giới hoàng gia, chính khách, ngôi sao
+                Hướng ra bãi biển Đà Nẵng trải dài cát trắng, Furama Resort Đà Nẵng là cửa ngõ đến với 3 di sản
+                văn hoá
+                thế giới: Hội An (20 phút), Mỹ Sơn (90 phút) và Huế (2 tiếng. 196 phòng hạng sang cùng với 70
+                căn biệt
+                thự từ hai đến bốn phòng ngủ có hồ bơi riêng đều được trang trí trang nhã, theo phong cách thiết
+                kế
+                truyền thống của Việt Nam và kiến trúc thuộc địa của Pháp, biến Furama thành khu nghỉ dưỡng danh
+                giá
+                nhất tại Việt Nam – vinh dự được đón tiếp nhiều người nổi tiếng, giới hoàng gia, chính khách,
+                ngôi sao
                 điện ảnh và các nhà lãnh đạo kinh doanh quốc tế.
             </p>
         </div>
     </div>
-    <div class="row" style="margin: 50px;text-align:center ">
-        <div style="text-align: center">
-            <h2 style="color: #cbbe73; font-size: 24px;font-family: Playfair Display;">
-                CÁC LOẠI PHÒNG
-            </h2>
-        </div>
-        <div style="text-align: justify">
-            <p style="margin-left: 300px;margin-right: 300px">
-                Khu nghỉ dưỡng có 196 phòng được thiết kế theo phong cách truyền thống Việt Nam kết hợp với phong cách
-                Pháp, 2 tòa nhà 4 tầng có hướng nhìn ra biển, nhìn ra hồ bơi trong xanh và những khu vườn nhiệt đới xanh
-                tươi mát. Ngoài ra, khu nghỉ dưỡng Furama còn cung cấp các liệu pháp spa, phòng xông hơi ướt, phòng
-                xông hơi khô, dịch vụ mát-xa cạnh hồ bơi, các dịch vụ thể thao dưới nước và các lớp tập yoga và
-                Thái Cực Quyền trên bãi biển.
-            </p>
-        </div>
+
+    <div class="row" style="text-align: center">
+        <h2 style="color: #cbbe73; font-size: 24px;font-family: Playfair Display;">
+            CÁC LOẠI PHÒNG
+        </h2>
     </div>
+
+    <div class="row" style="text-align: justify">
+        <p style="margin-left: 300px;margin-right: 300px">
+            Khu nghỉ dưỡng có 196 phòng được thiết kế theo phong cách truyền thống Việt Nam kết hợp với
+            phong cách
+            Pháp, 2 tòa nhà 4 tầng có hướng nhìn ra biển, nhìn ra hồ bơi trong xanh và những khu vườn nhiệt
+            đới xanh
+            tươi mát. Ngoài ra, khu nghỉ dưỡng Furama còn cung cấp các liệu pháp spa, phòng xông hơi ướt,
+            phòng
+            xông hơi khô, dịch vụ mát-xa cạnh hồ bơi, các dịch vụ thể thao dưới nước và các lớp tập
+            yoga và
+            Thái Cực Quyền trên bãi biển.
+        </p>
+    </div>
+    <footer class="row" th:fragment="footer">
+        <div>
+            <div style="background-color: #addccf">
+                <img width="600"
+                     src="https://furamavietnam.com/wp-content/uploads/2019/02/Ariyana-Tourism-Complex-02-2.png"
+                     alt="">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                    </svg>
+                    103 - 105 Vo Nguyen Giap Street, Khue My Ward, Ngu Hanh Son District, Danang City, Vietnam
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                    </svg>
+                    Tel.: 84-236-3847 333/888 * Fax: 84-236-3847 666
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                    </svg>
+                    Email: reservation@furamavietnam.com * www.furamavietnam.com
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
-<footer style="background-color: chocolate; height: 100px; margin-top: 600px;text-align: center">
-    @Made By Me
-</footer>
+</body>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous">
 </script>
 
-</body>
 </html>

@@ -1,4 +1,4 @@
-package com.example.service.impl.customer_service;
+package com.example.service.impl.customer;
 
 import com.example.model.customer.Customer;
 import com.example.repository.customer.ICustomerRepository;
@@ -12,6 +12,7 @@ import java.util.Optional;
 
 @Service
 public class CustomerService implements ICustomerService {
+
     @Autowired
     private ICustomerRepository iCustomerRepository;
 

@@ -1,4 +1,4 @@
-package com.example.service.impl.facility_service;
+package com.example.service.impl.facility;
 
 import com.example.model.facility.Facility;
 import com.example.repository.facility.IFacilityRepository;
@@ -36,5 +36,10 @@ public class FacilityService implements IFacilityService {
     @Override
     public Optional<Facility> findById(int id) {
         return facilityRepository.findById(id);
+    }
+
+    @Override
+    public Page<Facility> search(Pageable pageable, String name) {
+        return facilityRepository.searchByName(name, pageable);
     }
 }

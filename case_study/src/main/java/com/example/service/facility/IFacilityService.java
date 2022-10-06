@@ -14,6 +14,7 @@ public interface IFacilityService {
 
     void delete(int id);
 
-
     Optional<Facility> findById(int id);
+
+    Page<Facility> search(Pageable pageable, String name);
 }

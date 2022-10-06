@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Contract's List</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <style>
@@ -14,6 +14,7 @@
             background-size: contain;
             background-attachment: fixed;
             background-size: 100%;
+            overflow-x: hidden;
         }
     </style>
 </head>
@@ -151,7 +152,7 @@
                             <label for="deposit" class="h6">Deposits (VNĐ):</label>
                             <div class="input-group">
                                 <input type="number" id="deposit" class="form-control"
-                                       placeholder="Nhập tiền đặt cọc..." th:field="*{deposit}" required
+                                       placeholder="Input the deposit..." th:field="*{deposit}" required
                                        pattern="^0|[1-9]\d*$"
                                        title="Deposit (VND) must be an integer greater than or equal to 0."/>
                                 <span class="input-group-text"><i class="fa-solid fa-money-bill-wave"></i></span>
@@ -176,7 +177,7 @@
                   th:action="@{/contract/add-contract-detail}"
                   th:object="${contractDetail}" method="POST">
                 <div class="modal-header">
-                    <h3 class="modal-title fw-bold text-primary" id="exampleModalLabel4"> ADD NEW Service's along</h3>
+                    <h3 class="modal-title fw-bold text-primary" id="exampleModalLabel4"> Add New Service's along</h3>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
@@ -201,7 +202,7 @@
                             <label for="quantity" class="h6">Quantity:</label>
                             <div class="input-group">
                                 <input type="text" id="quantity" class="form-control"
-                                       placeholder="Nhập số lượng..." th:field="*{quantity}" required
+                                       placeholder="Input quantity..." th:field="*{quantity}" required
                                        pattern="^[1-9]\d*$"
                                        title="The quantity must be a positive integer."/>
                                 <span class="input-group-text">#</span>

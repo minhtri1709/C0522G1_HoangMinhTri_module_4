@@ -14,9 +14,9 @@
         }
     </style>
 </head>
-<body>
 <head th:insert="/index :: head"></head>
-<div class="text-center"><h2>Edit Customer</h2></div>
+<body>
+<div class="text-center" style="color: black"><h2>Edit Customer</h2></div>
 <div><a href="/customer"><i class="fa-sharp fa-solid fa-house-user"></i>Back To Employee List</a></div>
 <div id="form" style="text-align: center">
 
@@ -35,14 +35,27 @@
             <p style="color: red" th:errors="*{dateOfBirth}"
                th:if="${#fields.hasErrors('dateOfBirth')}"></p>
         </div>
+        <!--        <div>-->
+        <!--            <label><b>Gender</b></label>-->
+        <!--            <input type="radio" th:field="*{gender}" value="1"/>Male-->
+        <!--            <input type="radio" th:field="*{gender}" value="0"/>Female-->
+        <!--            <input type="radio" th:field="*{gender}" value="2"/>LGBT-->
+        <!--            <p style="color: red" th:errors="*{gender}"-->
+        <!--               th:if="${#fields.hasErrors('gender')}"></p>-->
+        <!--        </div>-->
         <div>
             <label><b>Gender</b></label>
-            <input type="radio" th:field="*{gender}" value="1"/>Male
-            <input type="radio" th:field="*{gender}" value="0"/>Female
-            <input type="radio" th:field="*{gender}" value="2"/>LGBT
-            <p style="color: red" th:errors="*{gender}"
-               th:if="${#fields.hasErrors('gender')}"></p>
-
+            <div class="d-flex">
+                <label class="d-block me-4">
+                    <input type="radio" th:value="1" name="customerGender" th:field="*{gender}" th:text="Male">
+                    <i class="fa-solid fa-mars"></i>
+                </label>
+                <label class="d-block">
+                    <input type="radio" th:value="0" name="customerGender" th:field="*{gender}"
+                           th:text="Female">
+                    <i class="fa-solid fa-venus"></i>
+                </label>
+            </div>
         </div>
         <div>
             <label><b>Id Card</b></label>
@@ -80,9 +93,8 @@
         <input id="save" type="submit" value="Save"/>
     </form>
 </div>
-
-</body>
 <footer th:insert="/index :: footer"></footer>
+</body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>

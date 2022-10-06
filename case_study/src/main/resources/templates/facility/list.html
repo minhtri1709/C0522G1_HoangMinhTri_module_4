@@ -4,41 +4,77 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <style>
+        body {
+            background-image: url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-attachment: fixed;
+            background-size: 100%;
+            overflow-x: hidden;
+        }
+    </style>
 </head>
 <body>
 <head th:insert="/index :: head"></head>
-<div class="text-center">
+<div class="text-center" style="color: black">
     <h1>
         Facility's List
     </h1>
+</div>
+<p th:text="${mess}" style="color:red;"></p>
+<!--<div class="row">-->
+<!--    <nav class="navbar navbar-expand-lg py-0 my-0">-->
+<!--        <div class="container-fluid">-->
+<!--            <a href="/facility/create">-->
+<!--                <button class="btn btn-secondary btn-outline-secondary btn-sm">-->
+<!--                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"-->
+<!--                         class="bi bi-person-plus" viewBox="0 0 16 16">-->
+<!--                        <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>-->
+<!--                        <path fill-rule="evenodd"-->
+<!--                              d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>-->
+<!--                    </svg>-->
+<!--                    <span class="text-light"> Add new Facility</span>-->
+<!--                </button>-->
+<!--            </a>-->
 
+<!--            <form class="d-flex my-2" role="search" action="/facility">-->
+<!--                <input class="form-control me-2" type="text" placeholder="Input search Name" aria-label="Search"-->
+<!--                       name="name">-->
+<!--                <button class="btn btn-outline-success" type="submit" name="action" value="search">-->
+<!--                    <i class="fa-solid fa-magnifying-glass"></i></button>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--    </nav>-->
+<!--</div>-->
+<div class="row" style="margin: 30px 10px">
+    <div class="col-lg-3"><a th:href="@{/facility/create}" >
+        <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" style="background-color: #addccf">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"-->
+                class="bi bi-person-plus" viewBox="0 0 16 16">
+                <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                <path fill-rule="evenodd"
+                      d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+            </svg>
+            <span class="text-light">Add New Facility</span>
+        </button>
+    </a></div>
+    <div class="col-lg-6">
+
+    </div>
+    <div class="col-lg-3">
+        <form class="d-flex" role="search" action="" method="get">
+            <input class="form-control me-2" type="search" placeholder="Search by name" aria-label="Search" name="name">
+<!--            <input class="form-control me-2" type="search" placeholder="Search by phone number" aria-label="Search"-->
+<!--                   name="phoneNumber">-->
+<!--            <input class="form-control me-2" type="search" placeholder="Search by address" aria-label="Search"-->
+<!--                   name="address">-->
+            <button class="btn btn-outline-success" type="submit" style="background: #addccf">Search</button>
+        </form>
+    </div>
 </div>
 <div class="row">
-    <nav class="navbar navbar-expand-lg py-0 my-0">
-        <div class="container-fluid">
-            <a href="/facility?action=create">
-                <button class="btn btn-success btn-outline-secondary btn-sm">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                         class="bi bi-person-plus" viewBox="0 0 16 16">
-                        <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
-                        <path fill-rule="evenodd"
-                              d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
-                    </svg>
-                    <span class="text-light"> Add new Facility</span>
-                </button>
-            </a>
-
-            <form class="d-flex my-2" role="search" action="/facility">
-                <input class="form-control me-2" type="text" placeholder="Input search Name" aria-label="Search"
-                       name="nameSearch">
-                <button class="btn btn-outline-success" type="submit" name="action" value="search">
-                    <i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-        </div>
-    </nav>
-</div>
-<div class="row">
-    <table class="table table-bordered text-center" id="tableEmployee">
+    <table class="table table-light table-striped table-bordered text-center" id="tableEmployee">
         <thead>
         <tr>
             <th scope="col">Serial</th>
@@ -49,7 +85,7 @@
             <th scope="col" style="text-align: center">Standard Of Room</th>
             <th scope="col">Update</th>
             <th scope="col">Delete</th>
-            <th scope="col">View</th>
+            <!--            <th scope="col">View</th>-->
         </tr>
         </thead>
         <tbody>
@@ -63,7 +99,7 @@
 
             <td>
                 <a th:href="@{facility/{id}/edit(id=${row.id})}">
-                    <button class="btn btn-primary btn-outline-secondary btn-sm">
+                    <button class="btn btn-outline-secondary btn-sm">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                              class="bi bi-brush-fill" viewBox="0 0 16 16">
                             <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04z"/>
@@ -72,10 +108,9 @@
                 </a>
             </td>
             <td class="text-center">
-                <button onclick="modalDelete('${employee.getId()}','${employee.getName()}')" type="button"
-                        class="btn btn-primary"
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
+                <button th:attr="onclick=|deleteFacility('${row.id}', '${row.name}')|"
+                        class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#deleteFacility">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                          class="bi bi-person-dash-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M11 7.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
@@ -83,51 +118,152 @@
                     </svg>
                 </button>
             </td>
-            <td>
-                <a th:href="@{facility/{id}/view(id=${row.id})}">
-                    <button class="btn btn-primary btn-outline-secondary btn-sm">
-                        <span>
-                            <i class="fa fa-street-view" aria-hidden="true"></i>
-                        </span>
-                    </button>
-                </a>
-            </td>
+            <!--            <td>-->
+            <!--                <button th:attr="onclick=|viewFacility('${row.id}', '${row.name}')|"-->
+            <!--                        class="btn btn-danger btn-outline-secondary btn-sm" data-bs-toggle="modal"-->
+            <!--                        data-bs-target="#deleteFacility">-->
+            <!--                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"-->
+            <!--                         class="bi bi-box-arrow-in-up-left" viewBox="0 0 16 16">-->
+            <!--                        <path fill-rule="evenodd"-->
+            <!--                              d="M9.636 13.5a.5.5 0 0 1-.5.5H2.5A1.5 1.5 0 0 1 1 12.5v-10A1.5 1.5 0 0 1 2.5 1h10A1.5 1.5 0 0 1 14 2.5v6.636a.5.5 0 0 1-1 0V2.5a.5.5 0 0 0-.5-.5h-10a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h6.636a.5.5 0 0 1 .5.5z"/>-->
+            <!--                        <path fill-rule="evenodd"-->
+            <!--                              d="M5 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H6.707l8.147 8.146a.5.5 0 0 1-.708.708L6 6.707V10.5a.5.5 0 0 1-1 0v-5z"/>-->
+            <!--                    </svg>-->
+            <!--                </button>-->
+            <!--            </td>-->
         </tr>
         </th:each>
         </tbody>
     </table>
-    <div>
-        <a th:href="@{'/facility'(page=${facilityList.number - 1})}"
-           th:if="${facilityList.hasPrevious()}"><i class="fa-solid fa-backward"></i>Previous</a>
-        <span th:text="${facilityList.number + 1}"></span>/<span th:text="${facilityList.totalPages}"></span>
-        <a th:href="@{'/facility'(page=${facilityList.number + 1})}"
-           th:if="${facilityList.hasNext()}">Next<i class="fa-solid fa-forward"></i></a>
-    </div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" th:href="@{'/facility'(page=${facilityList.number - 1}, name=${name})}"
+                   th:if="${facilityList.hasPrevious()}">Previous</a>
+            </li>
+            <li>
+                <a class="page-link" th:text="${facilityList.number + 1}"></a>
+                <!--                <span th:text="${facilityList.totalPages}"></span>-->
+            </li>
+            <li>
+                <a class="page-link" th:href="@{'/facility'(page=${facilityList.number + 1}, name=${name})}"
+                   th:if="${facilityList.hasNext()}">Next</a>
+            </li>
+        </ul>
+    </nav>
+
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="deleteFacility" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <form action="/facility">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form th:action="@{/facility/delete}">
                     <div class="modal-body">
-                        <input hidden type="text" name="id" id="idDelete">
-                        <input hidden type="text" name="action" value="delete">
-                        <span>Are you sure to delete : </span>
-                        <span style="color:red" id="nameDelete"></span>
+                        <span class="h6">Facility Name:</span><strong id="nameDelete" class="text-danger ps-2"></strong>
+                        <input type="hidden" name="idDelete" id="idDelete" readonly/>
                     </div>
+
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Delete</button>
+                        <button type="submit" class="btn btn-danger" value="delete">Delete</button>
                     </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="viewEmployee" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-center" id="exampleModalLabel2">Employee Information</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            </form>
+
+                <div class="modal-body" style="background-color: #f2f2f2">
+                    <table>
+                        <tr>
+                            <td class="h6 pe-3">Facility Type:</td>
+                            <td id="facilityType" class="text-primary h6"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="h6 pe-3">Facility Name:</td>
+                            <td id="name" class="text-primary"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="h6 pe-3">Area:</td>
+                            <td id="area" class="text-primary"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="h6 pe-3">Cost:</td>
+                            <td id="cost" class="text-primary"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="h6 pe-3">People in room:</td>
+                            <td id="maxPeople" class="text-primary"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="h6 pe-3">Type Rent:</td>
+                            <td id="rentType" class="text-primary"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="h6 pe-3">Standard Room:</td>
+                            <td id="standardRoom" class="text-primary"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="h6 pe-3">Desciption:</td>
+                            <td id="descriptionOtherConvenience" class="text-primary"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="h6 pe-3">Pool Area:</td>
+                            <td id="poolArea" class="text-primary"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="h6 pe-3">Number Floor:</td>
+                            <td id="numberOfFloors" class="text-primary"></td>
+                        </tr>
+                        <tr>
+                            <td class="h6 pe-3">Service Free Along:</td>
+                            <td id="facilityFree" class="text-primary"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+</body>
+<footer th:insert="/index :: footer"></footer>
+<script>
+    function deleteFacility(id, name) {
+        alert(id);
+        document.getElementById("idDelete").value = id;
+        document.getElementById("nameDelete").innerHTML = name;
+    }
+
+    function viewFacility() {
+
+    }
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>

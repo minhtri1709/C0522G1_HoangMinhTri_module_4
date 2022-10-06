@@ -1,4 +1,4 @@
-package com.example.service.impl.facility_service;
+package com.example.service.impl.facility;
 
 import com.example.model.facility.RentType;
 import com.example.repository.facility.IRentTypeRepository;

@@ -35,11 +35,11 @@ public class Facility {
 
     private boolean isDelete;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "facility_type_id", referencedColumnName = "id")
     private FacilityType facilityType;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "rent_type_id", referencedColumnName = "id")
     private RentType rentType;
 
